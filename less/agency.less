@@ -81,9 +81,11 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-custom {
+    padding: 10px 0;
     background-color: @gray-darker;
     border-color: transparent;
     .navbar-brand {
+        font-size: 1.5em;
         color: @theme-primary;
         .script-font;
         &:hover,
@@ -101,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
         border-color: @theme-primary;
         .heading-font;
         color: white;
-        font-size: 12px;
+        font-size: 1.5em;
         &:hover,
         &:focus {
             background-color: @theme-primary;
@@ -134,40 +136,40 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media(min-width:768px) {
-    .navbar-custom {
-        background-color: transparent;
-        padding: 25px 0;
-        -webkit-transition: padding 0.3s;
-        -moz-transition: padding 0.3s;
-        transition: padding 0.3s;
-        border: none;
-        .navbar-brand {
-            font-size: 2em;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
-        }
-        .navbar-nav>.active>a {
-            border-radius: 3px;
-        }
-    }
-}
+// @media(min-width:768px) {
+//     .navbar-custom {
+//         background-color: transparent;
+//         padding: 25px 0;
+//         -webkit-transition: padding 0.3s;
+//         -moz-transition: padding 0.3s;
+//         transition: padding 0.3s;
+//         border: none;
+//         .navbar-brand {
+//             font-size: 3em;
+//             -webkit-transition: all 0.3s;
+//             -moz-transition: all 0.3s;
+//             transition: all 0.3s;
+//         }
+//         .navbar-nav>.active>a {
+//             border-radius: 3px;
+//         }
+//     }
+// }
 
 // Navbar Change on Scroll
 
-@media(min-width:768px) {
-    .navbar-custom.affix {
-        background-color: @gray-darker;
-        padding: 10px 0;
-        .navbar-brand {
-            font-size: 1.5em;
-        }
-    }
-}
+// @media(min-width:768px) {
+//     .navbar-custom.affix {
+//         background-color: @gray-darker;
+//         padding: 10px 0;
+//         .navbar-brand {
+//             font-size: 1.5em;
+//         }
+//     }
+// }
 
 header {
-    background-image: url('../img/header-bg.jpg');
+    background-image: url('../img/header-bg3.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -187,7 +189,7 @@ header {
         .intro-heading {
             .heading-font;
             font-weight: 700;
-            font-size: 50px;
+            font-size: 30px;
             line-height: 50px;
             margin-bottom: 25px;
         }
@@ -251,7 +253,7 @@ section {
 
 // Portfolio Section
 
-#portfolio {
+#portfolio, #testimonials {
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
@@ -288,8 +290,8 @@ section {
                     h4 {
                         margin: 0;
                     }
-                }                
-            }            
+                }
+            }
         }
         .portfolio-caption {
             max-width: 400px;
@@ -315,7 +317,7 @@ section {
 }
 
 @media(min-width:767px) {
-    #portfolio {
+    #portfolio, #testimonial {
         .portfolio-item {
             margin: 0 0 30px;
         }
@@ -536,7 +538,7 @@ aside.clients {
 
 section#contact {
     background-color: @gray-darker;
-    background-image: url('../img/map-image.png');
+    //background-image: url('../img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
@@ -574,7 +576,7 @@ section#contact {
        font-weight: 700;
        color: @gray-lighter;
     }
-    :-ms-input-placeholder {  
+    :-ms-input-placeholder {
        .heading-font;
        font-weight: 700;
        color: @gray-lighter;
@@ -704,8 +706,8 @@ ul.social-buttons {
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
                 z-index:1052;
-            }            
-        }        
+            }
+        }
     }
     .modal-backdrop {
         opacity: 0;
