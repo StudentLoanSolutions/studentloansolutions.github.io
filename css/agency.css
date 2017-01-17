@@ -730,3 +730,9 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #1bb580;
 }
+/*
+* custom css
+*/
+.remove-bottom-padding {
+  padding-bottom: 0px;
+}
