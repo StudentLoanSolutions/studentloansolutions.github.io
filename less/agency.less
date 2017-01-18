@@ -82,17 +82,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-custom {
     padding: 10px 0;
-    background-color: @theme-my-gray;
+    background-color: #fff;
     border-color: transparent;
+    border-style: solid;
+    border-bottom: 10px solid @theme-primary;
     .navbar-brand {
         font-size: 1.5em;
-        color: #fff;
+        color: @theme-primary;
         .script-font;
         &:hover,
         &:focus,
         &:active,
         &.active {
-            color: darken(@theme-primary, 10%);
+            color: darken(@theme-primary, 30%);
         }
     }
     .navbar-collapse {
@@ -115,10 +117,10 @@ h1, h2, h3, h4, h5, h6 {
                 .heading-font;
                 font-weight: 400;
                 letter-spacing: 1px;
-                color: white;
+                color: @theme-primary;
                 &:hover,
                 &:focus {
-                    color: @theme-primary;
+                    color: darken(@theme-primary, 30%);
                     outline: none;
                 }
             }
