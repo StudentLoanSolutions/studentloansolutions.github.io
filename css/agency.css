@@ -741,3 +741,6 @@ body {
 .white-text {
   color: #fff;
 }
+.line-spacing {
+  line-height: 25px;
+}
