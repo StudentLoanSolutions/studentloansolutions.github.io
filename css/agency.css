@@ -751,4 +751,8 @@ body {
   background: #4EBABA;
   padding: 15px;
   border-radius: 20px;
+  margin-top: 50px;
+}
+.contact-text {
+  font-size: 15px;
 }
