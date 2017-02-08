@@ -744,3 +744,11 @@ body {
 .line-spacing {
   line-height: 25px;
 }
+.center-text {
+  text-align: left;
+}
+.disclosure {
+  background: #4EBABA;
+  padding: 15px;
+  border-radius: 20px;
+}
